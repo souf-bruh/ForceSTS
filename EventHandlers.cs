@@ -18,6 +18,8 @@ namespace ForceSTS
         {
             if (ev.NextKnownTeam == Respawning.SpawnableTeamType.NineTailedFox)
             {
+                i = 0;
+                x = 0;
                 foreach (Player ply in ev.Players)
                 {
                     MEC.Timing.CallDelayed(0.5f, () =>
@@ -40,11 +42,6 @@ namespace ForceSTS
                     });
                 }
             }
-        }
-        public void OnStarting()
-        {
-            i = 0;
-            x = 0;
         }
     }
 }

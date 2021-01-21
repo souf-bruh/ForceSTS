@@ -18,7 +18,6 @@ namespace ForceSTS
 			base.OnEnabled();
 
 			Exiled.Events.Handlers.Server.RespawningTeam += EventHandlers.OnRespawningTeam;
-			Exiled.Events.Handlers.Server.RoundStarted += EventHandlers.OnStarting;
 		}
 
         public override void OnDisabled()
@@ -27,7 +26,6 @@ namespace ForceSTS
             EventHandlers = null;
 
 			Exiled.Events.Handlers.Server.RespawningTeam -= EventHandlers.OnRespawningTeam;
-			Exiled.Events.Handlers.Server.RoundStarted -= EventHandlers.OnStarting;
 		}
 	}
 }
