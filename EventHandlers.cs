@@ -11,15 +11,13 @@ namespace ForceSTS
 
         public Vector3 spawnPos = new Vector3(150, 994, -46);
         public Vector3 spawnPos2 = new Vector3(151, 994, -48);
-        int i = 0;
-        int x = 0;
 
         public void OnRespawningTeam(RespawningTeamEventArgs ev)
         {
             if (ev.NextKnownTeam == Respawning.SpawnableTeamType.NineTailedFox)
             {
-                i = 0;
-                x = 0;
+                int i = 0;
+                int x = 0;
                 foreach (Player ply in ev.Players)
                 {
                     MEC.Timing.CallDelayed(0.5f, () =>
@@ -36,7 +34,7 @@ namespace ForceSTS
                         }
                         else if (x < 27)
                         {
-                            ply.Position = spawnPos + new Vector3(x, 0); ply.Rotation = new Vector3(0, 90, 0);
+                            ply.Position = spawnPos2 + new Vector3(x, 0); ply.Rotation = new Vector3(0, 90, 0);
                             x += 2;
                         }
                     });
