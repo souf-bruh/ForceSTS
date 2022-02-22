@@ -1,3 +1,3 @@
 # ForceSTS
  RP EXILED SCP:SL plugin
- Original author - Jesus-QC
+# Original author - Jesus-QC
